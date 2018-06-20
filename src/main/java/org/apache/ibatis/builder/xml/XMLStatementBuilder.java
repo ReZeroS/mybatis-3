@@ -69,6 +69,7 @@ public class XMLStatementBuilder extends BaseBuilder {
     String resultMap = context.getStringAttribute("resultMap");
     String resultType = context.getStringAttribute("resultType");
     String lang = context.getStringAttribute("lang");
+    //analyze sql and return the sqlSource as result: 73 95
     LanguageDriver langDriver = getLanguageDriver(lang);
 
     Class<?> resultTypeClass = resolveClass(resultType);
